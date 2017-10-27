@@ -1,0 +1,12 @@
+Name: Christopher Cornwall
+
+
+1. KNOWN PROBLEMS:
+
+My allocator is a bit slower than the system allocator but overall it perform at a good speed.
+
+
+2. DESIGN:
+I approach this problem by using a segregated free list. I implement two list for allocations, 
+nodeHead and pageHead to hold memory information of size <= 1024. I use mmap system call to allocate
+4096 chunks (pages) when size > 1024.

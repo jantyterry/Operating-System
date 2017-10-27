@@ -1,0 +1,11 @@
+Name: Christopher Cornwall
+
+
+1. KNOWN PROBLEMS:
+
+I have not encountered any known problems, for all the tests I have tried 
+with my implementations.
+
+
+2. DESIGN:
+The thread library is built to handle multitasking by sharing the cpu thread. This was achieved by using a circular link list to store all threads. 

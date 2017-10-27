@@ -1,0 +1,15 @@
+Names:
+	Christopher Cornwall
+	Jamar Robinson
+
+1. KNOWN PROBLEMS:
+
+We have tested thoroughly to the best of our abilities, and for this submission we
+have not encountered any known problems.
+
+
+2. DESIGN:
+
+We approach this problem by doing an alternating search through the root directory and 
+continously seek to find files. Hence, we read in the image file then continously goes
+through every logical clusters until there was no more.  

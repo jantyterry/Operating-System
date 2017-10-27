@@ -1,0 +1,27 @@
+Name: Christopher Cornwall
+
+
+1. KNOWN PROBLEMS:
+
+I have not encountered any known problems, for all the tests I have tried 
+with my implementations.
+
+
+2. DESIGN:
+
+(i) memory shim design:
+Using the linked listed data structure appraoched, the list stores the 
+memory value along with the size of the memory. The memory is pointed 
+to the head of the linked list. The memory is check to see if it is 
+freed, and if its not, then the unfreed size is printed out when the 
+destructor is called by the library is unloaded.
+
+(ii) sctracer design:
+The implemenation of the sctracer is designed to printed out the system 
+calls that is used by a program in order of increasing system call number 
+such that smallest system call number come first. As well as printing out 
+how many time the specific system call was called. Process was created
+by forking. Then splitting the user program arguments in tokens then passing 
+them to execvp, which will specify the environment explicitly as an argument.
+The system calls are kept in a buffer and are printed out to a text file during
+execution.
